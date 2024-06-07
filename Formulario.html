@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <a href="index.html">Volver inicio</a>
+    <form method="post" style="border: 2px solid; width: 850px; margin-left: 200px; background-color: rgb(211, 235, 250);">
+        <p style="text-align: center; font-size: x-large;"><b>Formulario de Inscripción</b></p>
+        
+        <div style="border: 2px solid ; background-color: rgb(211, 235, 250); width: 800px; text-align: center; margin-left: 25px;">
+
+            <p style="font-size: large;" ><b>Datos personales</b></p>
+
+            <div>
+
+                <label for="Nom">Nombre:</label>
+                <input type="text" id="Nom" name="Nom" placeholder="Escriba su nombre" required>
+
+                <label for="Ape">Apellido:</label>
+                <input type="text" id="Ape" name="Ape" placeholder="Escriba su apellido" required>
+
+            </div>
+
+            <div> <br> <br>
+
+                <label for="Correo">Correo:</label>
+                <input type="email" id="Correo" name="Correo" placeholder="Escriba su Correo" required>
+
+                <label for="Tel">Teléfono:</label>
+                <input type="tel" id="Tel" name="Tel" placeholder="Escriba su Teléfono">
+                
+            </div> <br> <br>
+
+            <div>
+
+                <label for="Dir">Dirección:</label>
+                <input type="text" id="Dir" name="Dir" placeholder="Escriba su Dirección">
+
+                <label for="Dep">Departamento:</label>
+                <input type="text" id="Dep" name="Dep" placeholder="Escriba su Departamento">
+
+                <label for="Pais">Pais:</label>
+                <input type="text" id="Pais" name="Pais" placeholder="Escriba su Pais" required>
+
+            </div>
+            <br>
+        </div> <br>
+
+        <div style="border: 2px solid ; background-color: rgb(211, 235, 250); width: 800px; text-align: center; margin-left: 25px;">
+
+            <p style="font-size: large;"><b>Descripción Personal</b></p>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="90" maxlength="300"
+                placeholder="Escriba por favor un breve descripcion personal"></textarea>
+                <br><br>
+        </div> <br> 
+        <div style="border: 2px solid ; background-color: rgb(211, 235, 250); width: 800px; text-align: center; margin-left: 25px;"> 
+
+            <p style="font-size: large;" ><b>Seleccione su estudio</b></p>
+
+            <label for="carrera">Carrera:</label>
+            <select name="carrera" id="carrera" required>
+                <option></option>
+                <option value="1">Jobs to be done</option>
+                <option value="2">Cloud Native</option>
+                <option value="3">Frontend</option>
+                <option value="4">Backend</option>
+                <option value="5">Fundamentals</option>
+                <option value="6">Python</option>
+                <option value="7">Marketing Digital</option>
+            </select>
+            <label for="modalidad">Modalidad:</label>
+            <select name="modalidad" id="modalidad" required>
+                <option></option>
+                <option value="1">Presencial</option>
+                <option value="2">Online</option>
+            </select>
+            <label for="chkTrabajo">Actualmente trabaja:</label>
+            <input type="checkbox" id="chkTrabajo" name="chkTrabajo"> <br> <br>
+            <a href="https://es.nodoeafit.com/cursos-nodo/" target="_blank">Conoce las carreras</a>
+            <br> <br>
+        </div>
+        <div style="text-align: center; margin: 10px;">
+            <button type="submit" id="btnEnviar" name="btnEnviar" style="margin-right: 20px;"><b>Enviar</b></button>
+            <button type="reset" id="btnLimpiar" name="btnLimpiar" style="margin-left: 20px;"><b>Limpiar</b></button>
+        </div> 
+    </form>
+</body>
+</html>
