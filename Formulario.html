@@ -6,86 +6,98 @@
     <title>Formulario</title>
 </head>
 <body>
-    <a href="index.html">Volver inicio</a>
-    <form method="post" style="border: 2px solid; width: 850px; margin-left: 200px; background-color: rgb(211, 235, 250);">
+    <a href="Portafolio.html">Volver inicio</a>
+    <form method="post" style="border: 2px solid; width: 800px; margin-left: 200px; background-color: rgb(211, 235, 250);">
         <p style="text-align: center; font-size: x-large;"><b>Formulario de Inscripción</b></p>
         
-        <div style="border: 2px solid ; background-color: rgb(211, 235, 250); width: 800px; text-align: center; margin-left: 25px;">
+        <fieldset style="text-align: center;">
 
-            <p style="font-size: large;" ><b>Datos personales</b></p>
+            <legend>Datos personales</legend>
 
             <div>
 
                 <label for="Nom">Nombre:</label>
-                <input type="text" id="Nom" name="Nom" placeholder="Escriba su nombre" required>
+                <input type="text" id="Nom" name="Nom" placeholder="Escriba su nombre" required 
+                    style="margin: 10px;">
 
                 <label for="Ape">Apellido:</label>
                 <input type="text" id="Ape" name="Ape" placeholder="Escriba su apellido" required>
 
             </div>
 
-            <div> <br> <br>
+            <div>
 
                 <label for="Correo">Correo:</label>
-                <input type="email" id="Correo" name="Correo" placeholder="Escriba su Correo" required>
+                <input type="email" id="Correo" name="Correo" placeholder="Escriba su correo" required style="margin: 10px;">
 
                 <label for="Tel">Teléfono:</label>
-                <input type="tel" id="Tel" name="Tel" placeholder="Escriba su Teléfono">
+                <input type="tel" id="Tel" name="Tel" placeholder="Escriba su teléfono">
                 
-            </div> <br> <br>
+            </div>
 
             <div>
 
                 <label for="Dir">Dirección:</label>
-                <input type="text" id="Dir" name="Dir" placeholder="Escriba su Dirección">
+                <input type="text" id="Dir" name="Dir" placeholder="Escriba su dirección">
 
                 <label for="Dep">Departamento:</label>
-                <input type="text" id="Dep" name="Dep" placeholder="Escriba su Departamento">
+                <input type="text" id="Dep" name="Dep" placeholder="Escriba su departamento" style="margin: 10px;">
 
                 <label for="Pais">Pais:</label>
-                <input type="text" id="Pais" name="Pais" placeholder="Escriba su Pais" required>
+                <input type="text" id="Pais" name="Pais" placeholder="Escriba su país" required>
 
             </div>
-            <br>
-        </div> <br>
+            
+        </fieldset> 
 
-        <div style="border: 2px solid ; background-color: rgb(211, 235, 250); width: 800px; text-align: center; margin-left: 25px;">
+        <fieldset style="text-align: center;">
+            <legend>Descripción Personal</legend>
+            <div>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="90" maxlength="300"
+                    placeholder="Escriba una breve descripción personal"></textarea>
+            </div> 
+        </fieldset>
 
-            <p style="font-size: large;"><b>Descripción Personal</b></p>
-            <textarea id="descripcion" name="descripcion" rows="4" cols="90" maxlength="300"
-                placeholder="Escriba por favor un breve descripcion personal"></textarea>
-                <br><br>
-        </div> <br> 
-        <div style="border: 2px solid ; background-color: rgb(211, 235, 250); width: 800px; text-align: center; margin-left: 25px;"> 
+        <fieldset style="text-align: center;"> 
 
-            <p style="font-size: large;" ><b>Seleccione su estudio</b></p>
+            <legend>Seleccione su estudio</legend>
 
-            <label for="carrera">Carrera:</label>
-            <select name="carrera" id="carrera" required>
-                <option></option>
-                <option value="1">Jobs to be done</option>
-                <option value="2">Cloud Native</option>
-                <option value="3">Frontend</option>
-                <option value="4">Backend</option>
-                <option value="5">Fundamentals</option>
-                <option value="6">Python</option>
-                <option value="7">Marketing Digital</option>
-            </select>
-            <label for="modalidad">Modalidad:</label>
-            <select name="modalidad" id="modalidad" required>
-                <option></option>
-                <option value="1">Presencial</option>
-                <option value="2">Online</option>
-            </select>
-            <label for="chkTrabajo">Actualmente trabaja:</label>
-            <input type="checkbox" id="chkTrabajo" name="chkTrabajo"> <br> <br>
-            <a href="https://es.nodoeafit.com/cursos-nodo/" target="_blank">Conoce las carreras</a>
-            <br> <br>
-        </div>
+            <div>
+
+                <label for="carrera">Carrera:</label>
+                <select name="carrera" id="carrera" required>
+                    <option value="" disabled>Seleccione una opción</option>
+                    <option value="1">Jobs to be done</option>
+                    <option value="2">Cloud Native</option>
+                    <option value="3">Frontend</option>
+                    <option value="4">Backend</option>
+                    <option value="5">Fundamentals</option>
+                    <option value="6">Python</option>
+                    <option value="7">Marketing Digital</option>
+                </select>
+
+                <label for="modalidad">Modalidad:</label>
+                <select name="modalidad" id="modalidad" style="margin: 10px;" required>
+                    <option value="" disabled>Seleccione una opción</option>
+                    <option value="1">Presencial</option>
+                    <option value="2">Online</option>
+                </select>
+
+                <label for="chkTrabajo">Trabaja actualmente:</label>
+                <input type="checkbox" id="chkTrabajo" name="chkTrabajo">
+            </div>
+
+            <div>
+                <a href="https://es.nodoeafit.com/cursos-nodo/" target="_blank">Conoce aquí mas información de las carreras</a>
+            </div>
+            
+        </fieldset>
+
         <div style="text-align: center; margin: 10px;">
             <button type="submit" id="btnEnviar" name="btnEnviar" style="margin-right: 20px;"><b>Enviar</b></button>
             <button type="reset" id="btnLimpiar" name="btnLimpiar" style="margin-left: 20px;"><b>Limpiar</b></button>
         </div> 
+
     </form>
 </body>
 </html>
