@@ -8,7 +8,7 @@
 body{
     font-family: 'Libre Baskerville', sans-serif;
     font-size: 1rem;
-    background: linear-gradient(to bottom, #5F749B, #DBC9F5);
+    background: linear-gradient(to top, #a2b1cd, #DBC9F5);
     display: grid;
     gap: 40px;
 
@@ -19,6 +19,7 @@ header{
 
     display: grid;
     grid-template: 100% / 50% 50%;
+    padding-top: 15px;
 
     & > h1 {
 
@@ -48,11 +49,15 @@ main{
     & > #about_me {
 
         font-family: 'Lora Variable' , sans-serif;
-        text-align:justify;
+        text-align:center;
         font-size: 1.2rem;
+        color: white;
         grid-area: 1 / 1 / 2 / 2;
-        margin: 10px;
+        margin: 15px;
         padding-top: 50px;
+        border: solid #0E1C36;
+        background-color: #0E1C36;
+        border-radius: 20px;
     }
 
     & > div{
@@ -63,13 +68,18 @@ main{
             width: 100%;
         }
     }
+
+    & > div a {
+        background-color:#5F749B;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
 }
 
-h2{
+h2 h3{
     font-family: 'Libre Baskerville', sans-serif;
-    font-size: 3rem;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 5%;
 }
 
 footer{

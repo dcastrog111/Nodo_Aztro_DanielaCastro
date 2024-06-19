@@ -5,9 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
     <link rel="stylesheet" href="./CSS/fonts.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/styleContact.css">
+    
 </head>
 <body>
+    <header>
+        <h1>Contact Me:</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About me</a>
+            <a href="proyectos.html">Projects</a>
+            <a href="contact_me.html">Contact me</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <span>Si quieres contactarte conmigo, lo puedes hacer a través del correo</span>
+            <a href="mailto:dcastrog1@eafit.edu.co" target="_blank">dcastrog1@eafit.edu.co</a>
+            <span>o diligenciado el siguiente formulario.</span>
+            <fieldset>
+                <legend>Datos personales:</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+
+                    <label for="apellido">Nombre:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido">
+                </div>
+                <div>
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Escriba su email">
+                    
+                    <label for="tel">Teléfono:</label>
+                    <input type="number" id="tel" name="tel" placeholder="Escriba su teléfono">
+                </div>
+                <div>
+                    <input type="checkbox" id="chkInfo" name="chkInfo">
+                    <label for="chkInfo">
+                        Estas de acuerdo con recibir información.
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensaje:</legend>
+
+                <label for="asunto">Asunto:</label>
+                <select name="asunto" id="asunto" required>
+                    <option value="" disabled>Seleccione una opción</option>
+                    <option value="1">Cotización</option>
+                    <option value="2">PQRS</option>
+                    <option value="3">Otro</option>
+                </select>
+
+                <div>
+                    <textarea id="mensaje" name="mensaje" rows="6" cols="75" maxlength="300"
+                        placeholder="Escriba aquí el mensaje"></textarea>
+                </div>
+            </fieldset>
+
+            <div>
+                <button type="submit" id="btnEnviar" name="btnEnviar"><b>Enviar Mensaje</b></button>
+            </div> 
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
