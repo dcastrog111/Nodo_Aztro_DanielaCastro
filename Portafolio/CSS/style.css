@@ -54,7 +54,7 @@ main{
         color: white;
         grid-area: 1 / 1 / 2 / 2;
         margin: 15px;
-        padding-top: 50px;
+        padding-top: 30px;
         border: solid #0E1C36;
         background-color: #0E1C36;
         border-radius: 20px;
@@ -79,7 +79,6 @@ main{
 h2 h3{
     font-family: 'Libre Baskerville', sans-serif;
     text-align: center;
-    padding: 5%;
 }
 
 footer{
@@ -101,6 +100,23 @@ footer{
         }
     }
 
+}
+
+#cv{
+
+margin-top: 25px;
+    & > a{
+        color: #0E1C36;
+        margin-top: 40px;
+        background-color: #DBC9F5;
+        border: solid #DBC9F5;
+        text-decoration: none;
+    }
+
+    & > a:hover{
+        background-color: #87A0CD;
+    }
+    
 }
 
 a:hover{
