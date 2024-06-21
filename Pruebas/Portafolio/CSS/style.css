@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(to top, #a2b1cd, #DBC9F5);
+    display: grid;
+    gap: 40px;
+
+}
+
+
+header{
+
+    display: grid;
+    grid-template: 100% / 50% 50%;
+    padding-top: 15px;
+
+    & > h1 {
+
+        text-align: center;
+    }
+
+    & > nav {
+
+        text-align: center;
+        background-color: #0E1C36;
+        color: white;
+        grid-area: 1 / 2 / 2 / 3;
+        padding-top: 10px;
+
+        & > a {
+            color: white;
+            margin-right: 30px; 
+            padding: 0.5rem;
+        }
+    }
+}
+
+main{
+    display: grid;
+    grid-template: 350px / 50% 50%;
+
+    & > #about_me {
+
+        font-family: 'Lora Variable' , sans-serif;
+        text-align:center;
+        font-size: 1.2rem;
+        color: white;
+        grid-area: 1 / 1 / 2 / 2;
+        margin: 15px;
+        padding-top: 30px;
+        border: solid #0E1C36;
+        background-color: #0E1C36;
+        border-radius: 20px;
+    }
+
+    & > div{
+
+        grid-area: 1 / 2 / 2 / 3;
+
+        & > img{
+            width: 100%;
+        }
+    }
+
+    & > div a {
+        background-color:#5F749B;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+}
+
+h2 h3{
+    font-family: 'Libre Baskerville', sans-serif;
+    text-align: center;
+}
+
+footer{
+    display: grid;
+    grid-template: 40px / 100%;
+
+    & > section {
+
+        text-align: center;
+        background-color: #0E1C36;
+        color: white;
+        padding-top: 10px;
+        grid-area: 1 / 1 / 2 / 2;
+
+        & > a {
+            color: white;
+            margin-right: 30px;  
+            padding: 0.5rem; 
+        }
+    }
+
+}
+
+#cv{
+
+margin-top: 25px;
+    & > a{
+        color: #0E1C36;
+        margin-top: 40px;
+        background-color: #DBC9F5;
+        border: solid #DBC9F5;
+        text-decoration: none;
+    }
+
+    & > a:hover{
+        background-color: #87A0CD;
+    }
+    
+}
+
+a:hover{
+    background-color: #87A0CD;  
+}
+
+
+
+
+
+
+
+

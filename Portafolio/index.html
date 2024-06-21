@@ -3,66 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    
-    <title>Portafolio Daniela Castro</title>
-    <link rel="stylesheet" href="./CSS/fonts.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Portafolio</title>
 </head>
-<body>
+<body class="container">
+        <header class="header"> 
+            <h1 class="header__titulo">Daniela Castro Gómez</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="proyectos.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="contact_me.html" class="nav__link">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
 
-    <header>
-        <h1>Daniela Castro Gómez</h1>
-        
-        <nav>
-                <a href="#">Home</a>
-                <a href="#about_me">About me</a>
-                <a href="proyectos.html">Projects</a>
-                <a href="contact_me.html">Contact Me</a>
-        </nav>
+            <section class="section">
+                <img class="section__fotoPerfil" src="dibujo.png" alt="Foto de perfil"> <br>
 
-    </header>
+                <a class="section__cv" href="CV_DanielaCastro.pdf" download="cv" target="_blank">Descarga mi CV</a>
 
-    <main>
-        <div id="about_me">
-            <h2>About me:</h2>
-            <p>Hola, acá podras conocer un poco mas sobre mi, mis proyectos y ponerte en contacto conmigo. <br><br>
-            </p>
+            </section>
             
+            <section class="section">
 
-            <div>
-                <h3>Skills:</h3> <br>
+                <h2 class="section__subtitulo">About me:</h2>
+                
+                <p class="section__descripcion">Hola soy Daniela, Desarrolladora Web en formación.<br>
+                    Actualmente soy estudiante del Programa de Desarrollo web con <a class="section__link" href="https://es.nodoeafit.com/" target="_blank">Nodo Eafit</a> y Comfama. <br><br>
+                    Me gusta ver peliculas, series y hacer deporte.<br><br>
+                    Acá podras conocer un poco mas sobre mi, mis proyectos y ponerte en contacto conmigo.</p>
 
-                <a>HTML</a>
-                <a>CSS</a>
-                <a>Java</a>
-                <a>SQL</a>
-            </div>
+                <h3 class="section__subtitulo">Skills:</h3>
 
-            <div id="cv">
-                <a href="CV_DanielaCastro.pdf" download="cv" target="_blank">Descarga mi CV</a>
-            </div>
+                <ul class="section__list">
+                    <li class="section__item--orange"><i class="fa-brands fa-html5">HTML5</i></li>
+                    <li class="section__item--blue"><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                    <li class="section__item--orangeBlue"><i class="fa-brands fa-java"></i>Java</li>
+                    <li class="section__item--blue"><i class="fa-solid fa-database"></i>SQL</li>
+                </ul>
+            </section>
+        </main>
 
-        </div>
-        
-
-        <div>
-            <img src="../Imagenes/prog.jpg" alt="imagen programación">
-        </div>
-    </main>
-
-    <footer>
-        <section>
-            <a href="https://www.instagram.com/" target="_blank">Instagram </a>
-        
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    
-            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-
-            <a href="https://github.com/" target="_blank">GitHub</a>
-        </section>
-
-    </footer>
-    
+        <footer class="footer">
+            <section class="section">
+                <ul class="section__list">
+                    <li class="section__item"><a class="section__link" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li class="section__item"><a class="section__link" href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li class="section__item"><a class="section__link" href="mailto:dcastrog1@eafit.edu.co" target="_blank"><i class="fa-solid fa-envelope"></i> dcastrog1@eafit.edu.co</a></li>
+                </ul>
+            </section>
+        </footer>
 </body>
 </html>
