@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body class="container">
+
+    <header class="header">
+        <h1 class="header__titulo">Contact Me:</h1>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main--sinborde">
+        <form class="form">
+
+            <span class="form__descripcion">Si quieres contactarte conmigo, lo puedes hacer a través del correo
+                <a class="form__link" href="mailto:dcastrog1@eafit.edu.co" target="_blank">dcastrog1@eafit.edu.co</a>
+                o diligenciado el siguiente formulario.
+            </span>
+
+            <fieldset class="fieldset">
+
+                <legend class="fieldset__titulo">Datos personales:</legend>
+
+                <div class="fieldset__div">
+
+                    <label class="fieldset__label" for="nombre">Nombre:</label>
+                    <input class="fieldset__input" type="text" id="nombre" name="nombre" placeholder="Escriba su nombre *" required>
+
+                    <label class="fieldset__label" for="apellido">Apellido:</label>
+                    <input class="fieldset__input" type="text" id="apellido" name="apellido" placeholder="Escriba su apellido *" required>
+                </div>
+
+                <div class="fieldset__div">
+                    <label class="fieldset__label" for="correo">Email:</label>
+                    <input class="fieldset__input" type="email" id="correo" name="correo" placeholder="Escriba su email *" required>
+                    
+                    <label class="fieldset__label" for="tel">Teléfono:</label>
+                    <input class="fieldset__input" type="number" id="tel" name="tel" placeholder="Escriba su teléfono">
+                </div>
+
+                <div class="fieldset__div">
+                    <input class="fieldset__input" type="checkbox" id="chkInfo" name="chkInfo">
+                    <label class="fieldset__label--small" for="chkInfo">
+                        Estas de acuerdo con recibir información.
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <legend class="fieldset__titulo">Mensaje:</legend>
+
+                <label class="fieldset__label" for="asunto">Asunto:</label>
+                <select class="fieldset__select" name="asunto" id="asunto" required>
+                    <option class="fieldset__option" value="" disabled>Seleccione una opción</option>
+                    <option class="fieldset__option" value="1">Cotización</option>
+                    <option class="fieldset__option" value="2">PQRS</option>
+                    <option class="fieldset__option" value="3">Otro</option>
+                </select>
+
+                <div class="fieldset__div">
+                    <textarea class="fieldset__textarea" id="mensaje" name="mensaje" rows="6" cols="75" maxlength="300"
+                        placeholder="Escriba aquí el mensaje *" required></textarea>
+
+                        <p class="fieldset__parrafo">* Campos obligatorios</p>
+                </div>
+            </fieldset>
+            <div class="form__div">
+                <button class="form__button" type="submit" id="btnEnviar" name="btnEnviar"><b>Enviar Mensaje</b></button>
+            </div> 
+
+        </form>
+
+    </main>
+    <footer class="footer">
+        <section class="section">
+            <ul class="section__list">
+                <li class="section__item"><a class="section__link" href="https://www.linkedin.com/in/daniela-castro-gomez/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li class="section__item"><a class="section__link" href="https://github.com/dcastrog111" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li class="section__item"><a class="section__link" href="mailto:dcastrog1@eafit.edu.co" target="_blank"><i class="fa-solid fa-envelope"></i> dcastrog1@eafit.edu.co</a></li>
+            </ul>
+        </section>
+    </footer>
+    
+</body>
+</html>

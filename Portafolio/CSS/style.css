@@ -32,8 +32,8 @@
     gap: 10px;
 }
 
-.nav__item:hover{
-    background-color: orange;
+.nav__link:hover{
+    color: orange;
 }
 
 .nav__link{
@@ -49,7 +49,7 @@
 }
 
 .section__fotoPerfil{
-    border: solid wheat;
+    border: 5px solid wheat;
     border-radius: 40%;
     width: 50%;
     align-self: center;
@@ -120,4 +120,37 @@
     border: solid wheat;
 }
 
+.section__link:hover{
+    color: orange;
+}
+
+.main--sinborde{
+    border: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.form__descripcion{
+    font-size: small;
+}
+
+.form__link{
+    color: white;
+
+}
+.form__link:hover{
+    color: orange;
+}
+
+.fieldset{
+    margin-top: 10px;
+}
+
+.fieldset__label{
+    margin: 10px;
+}
+
+.fieldset__input{
+    margin: 10px;
+}
 
