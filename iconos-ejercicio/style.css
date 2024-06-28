@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    gap: 10px;
+
+}
+
+.fa-brands {
+    background-color: white;
+    width: 60px;
+}
+
+.footer__nav {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    gap: 10px;
+
+}
+
+.nav__item {
+    color: white;
+    width: 60px;
+}
