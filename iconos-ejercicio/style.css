@@ -1,5 +1,5 @@
 body {
-    text-align: center;
+    margin-top: 15%;
 }
 
 .footer {
@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .footer__icons {
@@ -17,13 +19,23 @@ body {
     justify-content: center;
     align-items: center;
     list-style-type:none;
-    gap: 10px;
+    gap: 20px;
 
 }
 
-.fa-brands {
+.footer__item {
     background-color: white;
-    width: 60px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    font-size: 30px;
 }
 
 .footer__nav {
@@ -32,11 +44,11 @@ body {
     justify-content: center;
     align-items: center;
     list-style-type:none;
-    gap: 10px;
+    gap: 30px;
 
 }
 
 .nav__item {
     color: white;
-    width: 60px;
+    width: auto;
 }
