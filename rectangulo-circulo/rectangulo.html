@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Figuras Geométricas</title>
+</head>
+<body class="content">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="rectangulo.html" class="nav__link">Rectángulo</a></li>
+            <li class="nav__item"><a href="circulo.html" class="nav__link">Círculo</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__titulo" >El Rectángulo</h1>
+        <img class="header__imagen" src="superhero.png">
+    </header>
+    
+    <form class="form">
+
+        <h2 class="form__titulo">CALCULADORA DE ÁREA, PERÍMETRO Y DIAGONAL</h2>
+
+        <div class="form__calculos">
+
+            <div class="form__imagen">
+                <img class="rectangulo" src="rectangulo.png">
+            </div>
+            
+            <div class="form__lados">
+                <label for="base">Base en centímetros:</label>
+                <input type="number" id="base" placeholder="Escriba la base:">
+    
+                <label for="altura">Altura en centímetros:</label>
+                <input type="number" id="altura" placeholder="Escriba la altura:">
+            </div>
+            <div class="form__resultados">
+
+                <div class="form__label">
+                    
+                    <div>
+                        <label for="area">Área(cm2):</label>
+                    </div>
+                    <div>
+                        <label for="perimetro">Perímetro(cm):</label>
+                    </div>
+                    <div>
+                        <label for="diagonal">Diagonal(cm):</label>
+                    </div>
+                </div>
+
+                <div class="form__input">
+                    <input type="number" id="area" class="input--small">
+                    <input type="number" id="perimetro" class="input--small">
+                    <input type="number" id="diagonal" class="input--small">
+
+                </div>
+    
+                
+    
+            </div>
+        </div>
+
+        <div class="form__button">
+            <input class="button" type="button" value="CALCULAR" onclick="calcular()">
+        </div>
+        
+    </form>
+    
+    <script src="calculos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Figuras Geométricas</title>
+</head>
+<body class="content">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="rectangulo.html" class="nav__link">Rectángulo</a></li>
+            <li class="nav__item"><a href="circulo.html" class="nav__link">Círculo</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__titulo" >El Círculo</h1>
+        <img class="header__imagen" src="superhero.png">
+    </header>
+    
+    <form class="form">
+
+        <h2 class="form__titulo">CALCULADORA DE ÁREA, PERÍMETRO Y DIÁMETRO</h2>
+
+        <div class="form__calculos">
+
+            <div class="form__imagen">
+                <img class="circulo" src="circulo.png">
+            </div>
+            
+            <div class="form__lados">
+
+                <label for="radio">Radio en centímetros:</label>
+                <input type="number" id="radio" placeholder="Escriba el radio:">
+
+            </div>
+            <div class="form__resultados">
+
+                <div class="form__label">
+                    <div>
+                        <label for="diametro">Diámetro(cm):</label>
+                    </div>
+                    <div>
+                        <label for="area">Área(cm2):</label>
+                    </div>
+                    <div>
+                        <label for="perimetro">Perímetro(cm):</label>
+                    </div>
+                    
+                </div>
+
+                <div class="form__input">
+                    <input type="number" id="diametro" class="input--small">
+                    <input type="number" id="area" class="input--small">
+                    <input type="number" id="perimetro" class="input--small">
+                </div>
+            </div>
+        </div>
+
+        <div class="form__button">
+            <input class="button" type="button" value="CALCULAR" onclick="calcularCirculo()">
+        </div>
+        
+    </form>
+    
+    <script src="calculos.js"></script>
+
+</body>
+</html>
