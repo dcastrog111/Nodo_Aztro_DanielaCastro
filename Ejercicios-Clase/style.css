@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item1, .item2, .item3{
+    width: 300px;
+    padding: 10px;
+}
+
+.item1 img{
+    width: 100%;
+}
+
+.item1{
+    background-color: aqua;
+}
+
+.item2{
+    background-color: blueviolet;
+}
+
+.item3{
+    background-color: coral;
+}
+
+
+
