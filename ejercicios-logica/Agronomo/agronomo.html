@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleNav.css">
+    <title>Agrónomo</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="../Nadador/nadador.html" class="nav__link">Nadador</a></li>
+            <li class="nav__item"><a href="../Agronomo/agronomo.html" class="nav__link">Agrónomo</a></li>
+            <li class="nav__item"><a href="../Obra/obra.html" class="nav__link">Maestro de Obra</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nutricionista</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Liquidación</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__titulo" >Cálculo de Pesticida</h1>
+    </header>
+    <form class="form">
+
+        <div>
+            <label for="baseMenor">Base menor (metros):</label>
+            <input type="number" id="baseMenor">
+
+            <label for="baseMayor">Base Mayor (metros):</label>
+            <input type="number" id="baseMayor">
+
+            <label for="altura">Altura (metros):</label>
+            <input type="number" id="altura">
+
+            <label for="lado1">Lado 1 (metros):</label>
+            <input type="number" id="lado1">
+
+            <label for="lado2">Lado 2 (metros):</label>
+            <input type="number" id="lado2">
+        </div>
+
+        <div>
+            <input type="button" value="Calcular Área" onclick="calcular()">
+        </div>
+
+        <div>
+            <label for="area">Área Terreno</label>
+            <input type="number" id="area" readonly>
+
+            <label for="perimetro">Perímetro Terreno</label>
+            <input type="number" id="perimetro" readonly>
+        </div>
+
+        <div>
+            <input type="button" value="Calcular insumos" onclick="calcularInsumos()">
+        </div>
+
+        <div>
+            <label for="pesticida">Pesticida (litros):</label>
+            <input type="number" id="pesticida" readonly>
+
+            <label for="cerca">Cerca Electrica (metros):</label>
+            <input type="number" id="cerca" readonly>
+
+        </div>
+            
+    </form>
+
+    <script src="calculos.js"></script>
+</body>
+</html>

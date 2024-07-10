@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styleNav.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Maestro de Obra</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="../Nadador/nadador.html" class="nav__link">Nadador</a></li>
+            <li class="nav__item"><a href="../Agronomo/agronomo.html" class="nav__link">Agrónomo</a></li>
+            <li class="nav__item"><a href="../Obra/obra.html" class="nav__link">Maestro de Obra</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nutricionista</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Liquidación</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__titulo" >Calculadora de ladrillos</h1>
+    </header>
+    <form class="form">
+
+        <div class="contenedor">
+            <div class="imagenes">
+                <div class="imagen__contenedor"><img src="./imagenes/pequeño.png"></div>
+                <div class="imagen__contenedor"><img src="./imagenes/mediano.png"></div>
+                <div class="imagen__contenedor"><img src="./imagenes/grande.png"></div>
+            </div>
+            <div class="descripcion">
+                <div class="descripcion__detalle">
+                    <input type="radio" id="opcion1" name="tipoLadrillo" value="opcion1">
+                    <label for="opcion1">Ladrillo Concreto</label>
+                    <p>
+                        <label>Alto 9cm</label> <br>
+                        <label>Ancho 22cm</label> <br>
+                        <label>Profundo 13cm</label>
+                    </p>
+                </div>
+                <div class="descripcion__detalle">
+                    <input type="radio" id="opcion2" name="tipoLadrillo" value="opcion2:">
+                    <label for="opcion2">Ladrillo Pandereta</label>
+                    <p>
+                        <label>Alto 9cm</label> <br>
+                        <label>Ancho 23cm</label> <br>
+                        <label>Profundo 11cm</label>
+                    </p>
+                </div>
+                <div class="descripcion__detalle">
+                    <input type="radio" id="opcion3" name="tipoLadrillo" value="opcion3">
+                    <label for="opcion3">Ladrillo Macizo Perforado</label>
+                    <p>
+                        <label>Alto 10cm</label> <br>
+                        <label>Ancho 20cm</label> <br>
+                        <label>Profundo 12cm</label>
+                    </p>
+                </div>
+            </div>
+            <div class="detalle__pared">
+
+                <label for="longitud">Longitud Pared (metros):</label>
+                <input class="detalle__pared__input" type="number" id="longitud">
+
+                <label for="altura">Altura Pared (metros):</label>
+                <input class="detalle__pared__input" type="number" id="altura">
+
+                <label for="junta">Grosor junta(centímetros):</label>
+                <input class="detalle__pared__input" type="number" id="junta">
+
+                <input type="button" value="Calcular insumos" onclick="calcular()">
+                 
+            </div>
+
+            <div class="detalle__pared">
+                <label for="area">Area total Pared(metros):</label>
+                <input class="detalle__pared__input" type="number" id="area" readonly>
+
+                <label for="totalLadrillo">Total Ladrillos:</label>
+                <input class="detalle__pared__input" type="number" id="totalLadrillo" readonly>
+            </div>
+        </div>
+
+    </form>
+
+    <script src="calculos.js"></script>
+    
+</body>
+</html>

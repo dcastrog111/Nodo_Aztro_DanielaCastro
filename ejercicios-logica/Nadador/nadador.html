@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styleNav.css">
+
+    <title>Promedio Nadador</title>
+
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="nadador.html" class="nav__link">Nadador</a></li>
+            <li class="nav__item"><a href="../Agronomo/agronomo.html" class="nav__link">Agrónomo</a></li>
+            <li class="nav__item"><a href="../Obra/obra.html" class="nav__link">Maestro de Obra</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nutricionista</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Liquidación</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__titulo" >Promedio Nadador</h1>
+    </header>
+    <form class="form">
+
+        <div>
+            <label for="tiempo">Tiempo</label>
+            <input type="number" id="tiempo" min="1">
+        </div>
+
+        <div>
+            <input type="button" value="Registrar" onclick="ingresarTiempo()">
+            <input type="button" value="Limpiar Registros" onclick="limpiar()">
+        </div>
+
+        <div>
+            <textarea id="registro">Registros</textarea>
+        </div>
+
+        <div>
+            <input type="button" value="Calcular Promedio" onclick="calcularPromedio()">
+        </div>
+
+        <div>
+            <label for="promedio">Promedio</label>
+            <input type="number" id="promedio" readonly>
+        </div>
+            
+    </form>
+
+    <script src="calculos.js"></script>
+
+</body>
+</html>
