@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquidación Nómina</title>
+    <link rel="stylesheet" href="../styleNav.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="../Nadador/nadador.html" class="nav__link">Nadador</a></li>
+            <li class="nav__item"><a href="../Agronomo/agronomo.html" class="nav__link">Agrónomo</a></li>
+            <li class="nav__item"><a href="../Obra/obra.html" class="nav__link">Maestro de Obra</a></li>
+            <li class="nav__item"><a href="../IMC/imc.HTML" class="nav__link">IMC</a></li>
+            <li class="nav__item"><a href="../Nomina/nomina.html" class="nav__link">Liquidación Nómina</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__titulo" >Liquidación Nómina</h1>
+    </header>
+    <form class="form">
+
+        <div class="horasTrabajadas">
+
+            <p class="horasTrabajadas__titulo">Horas Trabajadas en el mes:</p>
+
+            <label for="dias">Días Trabajados:</label>
+            <input type="number" id="dias">
+
+            <label for="extraDiurna">HED:</label>
+            <input type="number" id="extraDiurna">
+
+            <label for="extraNocturna">HEN:</label>
+            <input type="number" id="extraNocturna">
+
+            <label for="extraFestiva">HEF:</label>
+            <input type="number" id="extraFestiva">
+        </div>
+
+        <div>
+            <input type="button" value="Calcular Salario" onclick="calcular()">
+        </div>
+
+        <div class="devengado">
+
+            <p class="devengado__titulo">Total devengado:</p>
+
+            <label for="salarioBasico">Salario Básico:</label>
+            <input type="number" id="salarioBasico">
+
+            <label for="recargos">Recargos:</label>
+            <input type="number" id="recargos">
+
+            <label for="deducciones">Deducciones:</label>
+            <input type="number" id="deducciones">
+
+            <label for="salarioNeto">Salario Neto:</label>
+            <input type="number" id="salarioNeto">
+            
+        </div>
+
+    </form>
+
+    <script src="calculos.js"></script>
+</body>
+</html>

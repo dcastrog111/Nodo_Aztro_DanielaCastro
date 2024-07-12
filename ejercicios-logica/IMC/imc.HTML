@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styleNav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../font.css">
+
+    <title>Índice de masa Corporal</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="../Nadador/nadador.html" class="nav__link">Nadador</a></li>
+            <li class="nav__item"><a href="../Agronomo/agronomo.html" class="nav__link">Agrónomo</a></li>
+            <li class="nav__item"><a href="../Obra/obra.html" class="nav__link">Maestro de Obra</a></li>
+            <li class="nav__item"><a href="../IMC/imc.HTML" class="nav__link">IMC</a></li>
+            <li class="nav__item"><a href="../Nomina/nomina.html" class="nav__link">Liquidación</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__titulo" >Indice de Masa Corporal</h1>
+    </header>
+    <form class="form">
+        <div class="contenedor">
+            <div class="entradas">
+                <label for="peso">Peso(kg):</label>
+                <input type="number" id="peso" min="1">
+    
+                <label for="altura">Altura(centimetros):</label>
+                <input type="number" id="altura" min="1">
+    
+                <input class="entradas__boton" type="button" value="Calcular" onclick="calcularImc()">
+            </div>
+    
+            <div class="resultados">
+                <label for="imc">IMC:</label>
+                <input type="number" id="imc" readonly>
+    
+                <label for="rango">Rango</label>
+                <input type="text" id="rango" readonly>
+            </div>
+    
+            <div class="rango">
+                <div class="rango__valor"><p> menos 18.5 </p></div>
+                <div class="rango__valor"><p>18.5 - 24.9</p></div>
+                <div class="rango__valor"><p>25 - 29.9</p></div>
+                <div class="rango__valor"><p>30 o más</p></div>
+            </div>
+
+            <div class="rango">
+                <div class="rango__item--azul"><p>Bajo Peso</p><p id="rango1"></p></div>
+                <div class="rango__item--verde"><p>Normal</p><p id="rango2"></p></div>
+                <div class="rango__item--amarillo"><p>Sobrepeso</p><p id="rango3"></p></div>
+                <div class="rango__item--rojo"><p>Obesidad</p><p id="rango4"></p></div>
+            </div>
+
+        </div>
+    </form>
+
+    <script src="calculos.js"></script>
+</body>
+</html>

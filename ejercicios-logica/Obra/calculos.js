@@ -27,4 +27,5 @@ function calcular(){
         document.getElementById('totalLadrillo').value = totalLadrillo;
     }
 
+
 }

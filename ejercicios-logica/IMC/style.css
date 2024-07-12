@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(245, 245, 245);
+    margin: 2%;
+    font-family: 'Comfortaa Variable';
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;   
+}
+
+.resultados{
+    background-color: rgb(232, 232, 232);
+    padding: 40px;
+}
+
+.rango{
+    display: flex;
+    justify-content: center;
+
+    & .rango__item--azul {
+        background-color: rgb(169, 169, 255);
+        padding: 30px;
+        width: 200px;
+        text-align: center;
+    }
+
+    & .rango__item--verde {
+        background-color: rgb(169, 255, 172);
+        padding: 30px;
+        width: 200px;
+        text-align: center;
+    }
+    & .rango__item--amarillo {
+        background-color: rgb(249, 255, 169);
+        padding: 30px;
+        width: 200px;
+        text-align: center;
+    }
+    & .rango__item--rojo {
+        background-color: rgb(255, 169, 169);
+        padding: 30px;
+        width: 200px;
+        text-align: center;
+    }
+
+    & .rango__valor{
+        width: 200px;
+        height: 5px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin:0%;
+        text-align: center;
+    }
+}
+
+input {
+    text-align: center;
+}
+
+#rango1, #rango2, #rango3, #rango4{
+    font-size: 10px;
+}
+
+.entradas__boton{
+    width: 100px;
+    height: 30px;
+    font-family: 'Comfortaa Variable';
+    font-weight: bolder;
+    border-style: solid;
+    border-radius: 5px;
+}
+
