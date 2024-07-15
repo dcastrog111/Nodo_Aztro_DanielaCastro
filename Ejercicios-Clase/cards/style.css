@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5px 5px;
+    gap: 20px;
+    border: 2px solid salmon;
+    width: 250px;
+}
+
+.titulo{
+    background-image: url("https://worldstrides.com/wp-content/uploads/2015/07/iStock_000040849990_Large.jpg");
+    background-size: cover;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 4px solid salmon;
+}
+
+.informacion{
+    display: flex;
+    justify-content: space-around;
+
+    & .informacion__likes, .informacion__fecha{
+        display: flex;
+    }
+}
+
+.descripcion{
+    text-align: center;
+}
+
+.boton{
+    align-self: center;
+    background-color: salmon;
+    border: salmon solid;
+    color: white;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
