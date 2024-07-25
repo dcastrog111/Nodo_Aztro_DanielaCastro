@@ -1,0 +1,93 @@
+/* dela-gothic-one-latin-400-normal */
+@font-face {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/dela-gothic-one@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/dela-gothic-one@latest/latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+
+  /* noto-sans-gothic-latin-400-normal */
+@font-face {
+    font-family: 'Noto Sans Gothic';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/noto-sans-gothic@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/noto-sans-gothic@latest/latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #028090;
+    color: white;
+    height: 10vh;
+}
+
+a{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: #E4FDE1;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color:white;
+}
+
+
+.nav__search{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Noto Sans Gothic', sans-serif;
+
+    & .nav_search__input{
+        height: 30px;
+        padding: 5px;
+    }
+
+    & .nav_search__button{
+        font-size: 20px;
+        background-color: #028090;
+        border: none;
+        color: white;
+        cursor:pointer;
+        padding: 5px;
+    }
+
+    & .nav_search__button:hover{
+        
+        color:#E4FDE1;
+    }
+
+}
+
+.nav__list{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    font-family: 'Noto Sans Gothic', sans-serif;
+    
+}
+
+.fa-regular{
+    font-size: 30px;
+}
+
