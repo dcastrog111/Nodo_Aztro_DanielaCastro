@@ -1,0 +1,245 @@
+main{
+    display: flex;
+    width: 100%;
+
+    @include movil{
+        flex-direction: column;
+    }
+}
+
+.perfil{
+
+    @include movil{
+        width: 100%;
+    }
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+
+    &__avatar{
+        width: 70px;
+        border-radius: 15px;
+    }
+    &__nombre{
+        @include estilos-texto($primario, 16px, $fuente1)
+    }
+
+    &__titulo{
+        @include estilos-texto($secundario, 12px, $fuente1);
+        margin-bottom: 10px;
+    }
+
+    &__boton{
+        background-color: $oscuro;
+        border-radius: 20px;
+        padding: 5px 20px;
+        color: $color-text-btn;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        font: {
+            family:$fuente1;
+            size:14px;
+            weight:bold;
+            style:normal;
+        }
+    }
+
+    &--estadistica{
+        width: 60%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: -2px 10px 26px -3px rgba(0,0,0,0.75);
+        border-radius: 20px;
+        margin: 20px 0px;
+
+        @include movil{
+            width: 90%;
+        }
+    }
+
+    &__ubicacion{
+        @extend .perfil--estadistica;
+    }
+
+    &__ubicacion{
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+        padding: 0 70px;
+
+        @include movil{
+            padding: 0 30px;
+        }
+
+        i{
+            grid-row: 1/3;
+            font-size: 30px;
+            color: $secundario;
+        }
+        h2{
+            @extend .estadistica__elemento--numero;
+            text-transform: uppercase;
+            text-align: left !important;
+        }
+
+        h3{
+            @extend .perfil__titulo;
+            display: block;
+            font-weight: 500;
+            color: $gris;
+            text-align: left;
+            letter-spacing: 0px;
+
+        }
+    }
+}
+
+.estadistica__elemento{
+    width: 75px;
+
+    &--numero{
+        font-family: $fuente1;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    span{
+        @extend .perfil__titulo;
+        display: block;
+        font-weight: 500;
+        color: $gris;
+        text-align: center;
+        letter-spacing: 0px;
+    }
+}
+
+.perfil__bio{
+
+    h2{
+        @extend .perfil__nombre;
+    }
+
+    h3{
+        @extend .perfil__titulo;
+    }
+}
+
+.perfil--galeria{
+
+        @extend .perfil--estadistica;
+        height: 220px;
+        display: grid;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include movil{
+            height: 700px;
+            padding: 10px;
+            gap: 2px;
+        }
+
+        h2{
+            @extend .estadistica__elemento--numero;
+            text-transform: uppercase;
+            text-align: left !important;
+            grid-column: 1/4;
+        }
+
+        img{
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+}
+
+.galeria__foto--1{
+    grid-row: 2/4;
+    height: 100%;
+
+    @include movil{
+        width: 100%;
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+}
+
+.galeria__foto--2{
+    grid-column: 2/4;
+    width: 100%;
+
+    @include movil{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        height: 100%;
+    }
+}
+
+.galeria__foto{
+    width: 100%;
+    height: 100%;
+}
+
+.galeria__foto--4{
+
+    @include movil{
+        grid-column: 2/3;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.articulo{
+
+    @include movil{
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    width: 40%;
+    background-color: $oscuro;
+    padding-left: 65px;
+    padding-top: 30px;
+
+    &__item{
+        border-bottom: $primario solid 2px;
+        height: 150px;
+
+        @include movil{
+            height: 200px;
+        }
+
+    }
+
+    h2{
+        @include estilos-texto($primario, 12px, $fuente1);
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    h3{
+        @include estilos-texto($color-text-btn, 16px, $fuente1);
+        text-align: left;
+        padding-right: 45px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        @include estilos-texto($color-text-btn, 12px, $fuente2);
+        text-align: left;
+        text-transform:inherit;
+        padding-right: 85px;
+    }
+
+}
