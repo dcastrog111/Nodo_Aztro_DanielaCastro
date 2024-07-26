@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #B8CDF8;
+
+    &__logo{
+        img{
+            height: 40px;
+        }
+    }
+
+    &__menu__lista{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+
+        & li a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.activo{
+    color: #41463D !important;
+    border-bottom: 2px solid #41463D;
+}
