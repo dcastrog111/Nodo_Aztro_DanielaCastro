@@ -1,23 +1,26 @@
-<h1>estoy en Inicio</h1>>
+<h1>estoy en Inicio</h1>
 
-<!-- Doble llaves para capturar valor de la varia string interpolation-->
-<!-- <h3>Nombre: {{name}}</h3>  -->
-<!-- <h3>Nombre: {{persona.name}}</h3>
+<!-- Doble llaves para capturar valor de la variable string interpolation-->
+<!-- <h3>Nombre: {{name}}</h3>
+<h3>Nombre: {{persona.name}}</h3>
 <h3>Correo: {{persona.correo}}</h3>
 <h3>Dirección: {{persona.direccion}}</h3> -->
 
+<!-- LLavar funciones con string interpolation -->
+
 <!-- <h3>La suma de 5 y 6 es {{sumar(5,6)}}</h3> -->
 
-<!-- <h3>Contador: {{contadorNum}}</h3>
+<!-- <h2>Ejercicio Contador</h2>
 
-<input type="number" [placeholder]="contenidoPlace" [class]="nombreClass">
+<h3>Contador: {{contadorNum}}</h3>
+
+<input type="text" [placeholder]="contenidoPlace" [class]="nombreClass" readonly [value]="tipo">
 
 <button type="button" (click)="incrementar()">Incrementar</button>
 <button type="button" (click)="reiniciar()">Reiniciar</button>
 
 
-<button type="button" (click)="reiniciar()">Reiniciar</button> -->
-
+<h2>Ejercicio Calculo</h2>
 
 <form action="">
     <input type="number" step="0.001" [formControl]="alturaControl" placeholder="Escribe tu altura (m)">
@@ -27,3 +30,33 @@
     <h2>{{resultado}}</h2>
     <button type="button" (click)="calcularImc()">Calcular</button>
 </form>
+
+<h2>Cambio de imagen</h2>
+
+<div [className]="contenedor"></div> -->
+
+<h2>Preguntas</h2>
+
+<input class="pregunta" type="text" [value]="pregunta">
+<div class="opcion">
+    <div class="opcion__item">
+        <div class="imagen"><img [src]="img1"></div>
+        <input type="text" [value]="opcion1">
+    </div>
+    
+    <div class="opcion__item">
+        <div class="imagen"><img [src]="img2"></div>
+        <input type="text" [value]="opcion2">
+    </div>
+    
+    <div class="opcion__item">
+        <div class="imagen"><img [src]="img3"></div>
+        <input type="text" [value]="opcion3">
+    </div>
+</div>
+<div class="botones">
+    <button type="button" (click)="atras()">Atras</button>
+    <button type="button" (click)="siguiente()">Siguiente</button>
+</div>
+
+
