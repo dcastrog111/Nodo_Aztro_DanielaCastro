@@ -7,7 +7,8 @@ import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 export const routes: Routes = [
-    {path:"", component:InicioComponent}, //Poner un path vacio para que la pagina por defecto sea inicio
+    
+    {path:"", redirectTo: '/inicio', pathMatch:'full'}, //Poner un path vacio para que la pagina por defecto sea inicio
     {path:"inicio", component :InicioComponent},
     {path:"tienda", component :TiendaComponent},
     {path:"nosotros", component :NosotrosComponent},

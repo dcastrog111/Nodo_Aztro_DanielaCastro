@@ -1,0 +1,35 @@
+<h1>Registro de eventos</h1>
+
+<form action="">
+    <div>
+        <label for="">Nombre</label>
+        <br>
+        <input type="text"  [formControl]="nombreC" placeholder="Nombre del evento">
+    </div>
+    <div>
+        <label for="">Descripción</label>
+        <br>
+        <input type="text"  [formControl]="descripcionC" placeholder="Descripción del evento">
+    </div>
+    <div>
+        <label for="">Locación</label>
+        <br>
+        <input type="text" [formControl]="locacionC" placeholder="Locación del evento">
+    </div>
+    <div>
+        <label for="">Fecha</label>
+        <br>
+        <input type="text"  [formControl]="fechaC" placeholder="Fecha del evento">
+    </div>
+    <div>
+        <label for="">Hora</label>
+        <br>
+        <input type="text"  [formControl]="horaC" placeholder="Hora del evento">
+    </div>
+    <div>
+        <label for="">Cupos</label>
+        <br>
+        <input type="number" [formControl]="cuposC" placeholder="Cupos del evento">
+    </div>
+    <input type="button" vale="Registrar" (click)="registrarEvento()">
+</form>
