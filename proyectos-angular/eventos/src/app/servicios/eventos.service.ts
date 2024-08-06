@@ -12,12 +12,24 @@ export class EventosService {
   constructor(private http:HttpClient) { }  
   // private http = inject(HttpClient); //Otra forma en lugar del contructor
 
+  obtenerEid(idE:string | null){
+    return this.http.get(this.apiUrl+'/listaEventos/'+idE);
+  }
+
   obtenerE (){
     return this.http.get(this.apiUrl+'/listaEventos');
   }
 
   registroE(datos:Object){
     return this.http.post(this.apiUrl+'/listaEventos',datos);
+  }
+
+  eliminarEid(idE:string | null){
+    return this.http.delete(this.apiUrl+'/listaEventos/'+idE);
+  }
+
+  actualizarEid(idE:string | null, data:object){
+    return this.http.put(this.apiUrl+'/listaEventos/'+idE,data);
   }
 
   

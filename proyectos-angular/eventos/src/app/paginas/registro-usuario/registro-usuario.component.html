@@ -1,0 +1,26 @@
+<h1>Registro de eventos</h1>
+
+<form action="">
+    <div>
+        <label for="">Nombre</label>
+        <br>
+        <input type="text"  [formControl]="nameC" placeholder="Nombre completo">
+    </div>
+    <div>
+        <label for="" >Correo</label>
+        <br>
+        <input type="text" (keyup)="verificarCorreo($event)" [formControl]="emailC" placeholder="Correo Electrónico">
+        <label for="">{{estadoCorreo}}</label>
+    </div>
+    <div>
+        <label for="">Contraseña</label>
+        <br>
+        <input type="text" [formControl]="passC" placeholder="Contraseña">
+    </div>
+    <div>
+        <label for="">Confirmar contraseña</label>
+        <br>
+        <input type="text"  [formControl]="conPassC" placeholder="Confirmar Contraseña">
+    </div>
+    <input type="button" vale="Registrar" (click)="registrarUsuario()">
+</form>
