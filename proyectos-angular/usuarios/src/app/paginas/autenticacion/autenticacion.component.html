@@ -8,14 +8,14 @@
             <div class="flex flex-col gap-4">
                 <div class="flex flex-col">
                     <label for="">Correo</label>
-                    <input class="bg-neutral-300 px-5 py-1 rounded-md" type="text" placeholder="Ingrese su correo">
+                    <input class="bg-neutral-300 px-5 py-1 rounded-md" type="text" placeholder="Ingrese su correo" [formControl]="email">
                 </div>
                 <div class="flex flex-col">
                     <label for="">Contraseña</label>
-                    <input class="bg-neutral-300 px-5 py-1 rounded-md" type="password" placeholder="Ingrese su contraseña">
+                    <input class="bg-neutral-300 px-5 py-1 rounded-md" type="password" placeholder="Ingrese su contraseña" [formControl]="password">
                 </div>
             </div>
-            <button class="text-black bg-yellow-400 hover:bg-yellow-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-10 py-2.5 text-center ">Entrar</button>
+            <button type="button" (click)="autenticarUsuario()" class="text-black bg-yellow-400 hover:bg-yellow-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-10 py-2.5 text-center ">Entrar</button>
             <p>¿No tienes cuenta? <a>Registrate</a></p>
         </form>
     </section>

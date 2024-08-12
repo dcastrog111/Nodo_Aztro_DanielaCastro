@@ -12,12 +12,12 @@ export class DestinoComponent {
 
   destinoAmerica = "";
   destinoEuropa = "";
-  pDestino = "Ciudad";
+  pDestino = "Playa";
   pClimatica = "Caluroso";
   pActividad = "Cultura y Museos";
   pAlojamiento = "Hotel de Lujo";
   dViaje = "1-2 semanas";
-  edad = "Más de 50 años";
+  edad = "30-50 años";
 
   hallarDestino(){
 
