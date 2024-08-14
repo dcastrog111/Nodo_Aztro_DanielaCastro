@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <form (ngSubmit)="mostrar()" #formContact="ngForm">
+            <div class="mb-2">
+                <label class="form.label">Nombre</label>
+                <input name="nombre" type="text" class="form-control" placeholder="Ingrese nombre" [(ngModel)]="persona.nombre" required #nomb="ngModel">
+            </div>
+            <div class="alert alert-danger mt-2" [hidden]="nomb.valid  || nomb.pristine">
+                El nombre es obligatorio
+            </div>
+            <div>
+                <label class="form.label">Edad</label>
+                <input name="edad" type="number" class="form-control" placeholder="Ingrese edad" [(ngModel)]="persona.edad">
+            </div>
+            <button class="btn btn-primary mt-2" [disabled]="formContact.invalid">Envíar</button>
+        </form>
+    </div>
+</div>

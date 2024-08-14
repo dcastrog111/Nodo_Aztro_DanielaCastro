@@ -1,0 +1,20 @@
+<button [class.disabled]="desabilitar" class="btn btn-danger" (click)="color = 'text-danger' ">Color Rojo</button>
+<button [class.disabled]="desabilitar" class="btn btn-primary mx-2" (click)="color = 'text-primary' ">Color Verde</button>
+
+<button [class] = "{
+    'btn': true,
+    'btn-success': true}" 
+    (click)="color = 'text-success'" [disabled]="desabilitar">Color Azul</button>
+
+<p [class]="color">Texto que se va a modificar</p>
+
+<button (click)=" funHabilitar()">Habilitar/deshabilitar</button>
+
+<br><br>
+
+<div>
+    <button class="btn btn-danger" (click)="src= 'https://img.freepik.com/fotos-premium/fondos-pantalla-iphone-tratan-sobre-paisaje-naturaleza-paisaje-puesta-sol-puesta-sol-naturaleza-paisajes-cielo-es-limite_916211-10897.jpg?w=360' ">Imagen 1</button>
+    <button class="btn btn-primary mx-2" (click)="src = 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'">Imagen 2</button>
+</div>
+
+<img [src]="src">

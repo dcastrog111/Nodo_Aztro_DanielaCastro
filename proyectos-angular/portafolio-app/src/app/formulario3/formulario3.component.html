@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formulario">
+            <div class="mb-2">
+                <label class="form.label">Nombre</label>
+                <input formControlName="name" type="text" class="form-control" placeholder="Ingrese nombre">
+            </div>
+            <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
+                El nombre es obligatorio
+            </div>
+            <div>
+                <label class="form.label">Email</label>
+                <input type="email" formControlName="email" class="form-control" placeholder="Ingrese email">
+            </div>
+
+            <div class="alert alert-danger mt-2" [hidden]="formulario.get('email')?.valid || formulario.get('email')?.pristine">
+                <span *ngIf="formulario.get('email')?.errors?.['required']">
+                    El correo es obligatorio
+                </span>
+                <span *ngIf="formulario.get('email')?.errors?.['email']">
+                    El correo debe ser válido
+                </span>
+            </div>
+
+            <button (click)="mostrar()" class="btn btn-primary mt-2" [disabled]="formulario.invalid">Envíar</button>
+        </form>
+    </div>
+</div>
+
